@@ -1,4 +1,8 @@
 package DTO;
 
-public class Bike {
+public class Bike extends Vehicle{
+
+    public Bike(String registrationNumber, String ownerName, String color){
+        super(registrationNumber, ownerName, color);
+    }
 }
