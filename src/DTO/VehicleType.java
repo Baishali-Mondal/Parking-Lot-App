@@ -1,4 +1,7 @@
 package DTO;
 
-public class VehicleType {
+public enum VehicleType {
+    BIKE,
+    CAR,
+    TRUCK;
 }

@@ -5,11 +5,17 @@ public abstract class Vehicle {
     private final String registrationNumber;
     private final String ownerName;
     private final String color;
+    private final VehicleType vehicleType;
 
-    protected Vehicle( String registrationNumber, String ownerName, String color) {
+    protected Vehicle(
+            String registrationNumber,
+            String ownerName,
+            String color,
+            VehicleType vehicleType) {
         this.registrationNumber = registrationNumber;
         this.ownerName = ownerName;
         this.color = color;
+        this.vehicleType = vehicleType;
     }
 
     public String getRegistrationNumber() {
@@ -24,6 +30,9 @@ public abstract class Vehicle {
         return ownerName;
     }
 
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
     @Override
     public String toString() {
         return "Vehicle{" +
@@ -31,4 +40,5 @@ public abstract class Vehicle {
                 ", color='" + color + '\'' +
                 '}';
     }
+
 }
