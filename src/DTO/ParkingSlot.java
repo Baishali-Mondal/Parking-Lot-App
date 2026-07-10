@@ -6,9 +6,7 @@ public class ParkingSlot {
     private boolean occupied;
     private Vehicle parkedVehicle;
 
-    public ParkingSlot(
-            int slotNumber,
-            VehicleType slotType) {
+    public ParkingSlot(int slotNumber, VehicleType slotType) {
         this.slotNumber = slotNumber;
         this.slotType = slotType;
         this.occupied = false;
@@ -23,19 +21,22 @@ public class ParkingSlot {
         return slotType;
     }
 
+    public String getSlotNumber() {
+        return slotNumber + " ";
+    }
+
     public void parkVehicle(Vehicle vehicle) {
         if (vehicle.getVehicleType() != slotType) {
             System.out.println("The Slot is not compatible with the Vehicle");
             return;
-        }
-        else {
-        if (!isAvailable()) {
-            System.out.println("Slot is already occupied");
-            return;
-        }
-        this.parkedVehicle = vehicle;
-        this.occupied = true;
-        System.out.println("Vehicle parked successfully at Slot No. :" + slotNumber);
+        } else {
+            if (!isAvailable()) {
+                System.out.println("Slot is already occupied");
+                return;
+            }
+            this.parkedVehicle = vehicle;
+            this.occupied = true;
+            System.out.println("\nVehicle parked successfully at Slot No. :" + slotNumber);
         }
     }
 
@@ -46,10 +47,5 @@ public class ParkingSlot {
         parkedVehicle = null;
         occupied = false;
         System.out.println("Vehicle at Slot No. :" + slotNumber + " has been removed successfully");
-    }
-
-
-    public String getSlotNumber() {
-        return slotNumber + " ";
     }
 }
