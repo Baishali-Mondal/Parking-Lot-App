@@ -18,21 +18,20 @@ public abstract class Vehicle {
         this.vehicleType = vehicleType;
     }
 
+    //getters
     public String getRegistrationNumber() {
         return registrationNumber;
     }
-
     public String getColor() {
         return color;
     }
-
     public String getOwnerName() {
         return ownerName;
     }
-
     public VehicleType getVehicleType() {
         return vehicleType;
     }
+
     @Override
     public String toString() {
         return "Vehicle{" +
