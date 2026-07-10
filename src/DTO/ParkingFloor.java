@@ -14,6 +14,7 @@ public class ParkingFloor {
     public int getFloorNumber(){
         return floorNumber;
     }
+
     public List<ParkingSlot> getParkingSlots(){
         return this.parkingSlots;
 //        return Collections.unmodifiableList(parkingSlots);
@@ -22,6 +23,8 @@ public class ParkingFloor {
     public void addSlot(ParkingSlot slot){
         parkingSlots.add(slot);
     }
+
+    // Check slot availability based on the type of vehicle
     public ParkingSlot findAvailableSlot(VehicleType vehicleType) {
         for(ParkingSlot slot : parkingSlots){
             if(slot.isAvailable()
