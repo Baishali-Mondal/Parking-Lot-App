@@ -36,16 +36,18 @@ public class ParkingSlot {
             }
             this.parkedVehicle = vehicle;
             this.occupied = true;
-            System.out.println("\nVehicle parked successfully at Slot No. :" + slotNumber);
+//            System.out.println("\nVehicle parked successfully at Slot No. :" + slotNumber);
         }
     }
 
     public void removeVehicle() {
         if (isAvailable()) {
             System.out.println("Slot is already Empty");
+            return;
+        } else {
+            parkedVehicle = null;
+            occupied = false;
+            System.out.println("Vehicle at Slot No " + slotNumber + " is going to exit");
         }
-        parkedVehicle = null;
-        occupied = false;
-        System.out.println("Vehicle at Slot No. :" + slotNumber + " has been removed successfully");
     }
 }

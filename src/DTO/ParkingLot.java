@@ -54,13 +54,14 @@ public class ParkingLot {
         slot.removeVehicle();
         ticket.closeTicket(); //set exit and calculate the fee
         ticket.calculateFee();
-        System.out.println("Vehicle exited successfully");
+//        System.out.println("Vehicle exited successfully");
     }
 
 
     public ParkingTicket findTicketById(int ticketId) {
         for (ParkingTicket ticket : parkingTickets) {
-            if (ticket.getTicketId() == ticketId) {
+            if (ticket.getTicketId() == ticketId
+                    && ticket.getStatus() == TicketStatus.ACTIVE) {
                 return ticket;
             }
         }

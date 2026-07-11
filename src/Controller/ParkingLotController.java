@@ -26,7 +26,7 @@ public class ParkingLotController {
         System.out.println("1. Park Vehicle");
         System.out.println("2. Exit Vehicle");
         System.out.println("3. Display Available Slots");
-        System.out.println("4. Exit");
+        System.out.println("4. Exit\n");
     }
 
     public void runParkingLot() {
@@ -73,13 +73,13 @@ public class ParkingLotController {
 
         ParkingTicket ticket = parkingService.findTicketById(ticketId);
         if (ticket == null) {
-            System.out.println("Invalid Ticket ID");
+            System.out.println("Ticket ID " + ticketId + " not found");
             return;
         }
-        parkingService.exitVehicle(ticket);
 
+        parkingService.exitVehicle(ticket);
         System.out.println("Parking Fee : ₹" + ticket.getFee());
-        System.out.println("Thank You!!!!!");
+        System.out.println("Vehicle exited Successfully. Thank You!!!!!");
     }
 
     private void parkVehicle() {
