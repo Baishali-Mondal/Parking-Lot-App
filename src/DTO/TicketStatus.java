@@ -1,4 +1,6 @@
 package DTO;
 
-public class TicketStatus {
+public enum TicketStatus {
+    ACTIVE,
+    CLOSED
 }
