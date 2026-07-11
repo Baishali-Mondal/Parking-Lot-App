@@ -10,7 +10,7 @@ The primary objective of this project is to understand how to model real-world e
 
 ---
 
-# 🎯 Features
+# Features
 
 * Park different types of vehicles
 
@@ -29,7 +29,7 @@ The primary objective of this project is to understand how to model real-world e
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 * Java
 * Object-Oriented Programming (OOP)
@@ -39,7 +39,7 @@ The primary objective of this project is to understand how to model real-world e
 
 ---
 
-# 🏗 Project Architecture
+# Project Architecture
 
 The project follows a layered architecture to separate responsibilities.
 
@@ -77,7 +77,7 @@ Each layer has a single responsibility, making the application easy to maintain 
 
 ---
 
-# 🚘 Parking Flow
+# Parking Flow
 
 ### Vehicle Entry
 
@@ -113,7 +113,7 @@ Each layer has a single responsibility, making the application easy to maintain 
 
 ---
 
-# 🧠 OOP Concepts Used
+# OOP Concepts Used
 
 ## Encapsulation
 
@@ -159,7 +159,7 @@ The abstract `Vehicle` class provides common properties while concrete vehicle c
 
 ---
 
-# 📚 Low-Level Design Concepts Applied
+# Low-Level Design Concepts Applied
 
 * Single Responsibility Principle (SRP)
 * Composition
@@ -170,7 +170,7 @@ The abstract `Vehicle` class provides common properties while concrete vehicle c
 
 ---
 
-# 🔍 Class Responsibilities
+# Class Responsibilities
 
 ### ParkingLot
 
@@ -230,7 +230,7 @@ Handles user interaction through the console and delegates business operations t
 
 ---
 
-# 💰 Parking Fee Calculation
+# Parking Fee Calculation
 
 Parking fee is calculated using the parking duration.
 
@@ -265,7 +265,7 @@ git clone <repository-url>
 
 ---
 
-# 🎓 Learning Outcomes
+# Learning Outcomes
 
 This project helped me gain practical experience with:
 
